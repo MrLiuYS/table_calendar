@@ -63,6 +63,9 @@ class CalendarController {
           return false;
         }),
       );
+  void setEvents(Map<DateTime, List> events) {
+    _events = events;
+  }
 
   Map<DateTime, List> _events;
   Map<DateTime, List> _holidays;
